@@ -1,0 +1,22 @@
+{
+  "name": "github-actions-publishing",
+  "version": "0.1.0",
+  "description": "Demo npm package publishing exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "automation",
+    "npmjs",
+    "publishing",
+    "security"
+  ],
+  "author": "ulisses.albuquerque@latitudefinancial.com",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "husky": "^3.1.0",
+    "mocha": "^6.2.2"
+  }
+}

@@ -5,6 +5,10 @@ const gap = require('..')
 
 describe('github-actions-publishing', function () {
   describe('#hash', function () {
+    it('should require a valid input', function() {
+      assert.throws(() => { gap.hash(null) }, 'null input should raise exception')
+    })
+
     it('should return a hex string', function () {
       const randomString = crypto.randomBytes(16).toString('base64')
       assert(gap.hash(randomString).match(/^[0-9a-f]+$/), 'hash value is not a hex string')

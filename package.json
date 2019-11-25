@@ -1,6 +1,6 @@
 {
   "name": "github-actions-publishing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Demo npm package publishing exercise",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "release": "[ ! -z \"$GITHUB_REF\" ] && (echo $GITHUB_REF | npm version $(grep -oE '(\\d+.\\d+.\\d+)'))"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/undeadbeef/github-actions-publishing.git"
+    "type": "git",
+    "url": "https://github.com/undeadbeef/github-actions-publishing.git"
   },
   "keywords": [
     "automation",

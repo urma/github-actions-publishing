@@ -4,7 +4,8 @@
   "description": "Demo npm package publishing exercise",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "release": "[ ! -z \"$GITHUB_REF\" ] && (echo $GITHUB_REF | npm version $(grep -oE '(\\d+.\\d+.\\d+)'))"
   },
   "repository": {
     "type" : "git",

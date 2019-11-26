@@ -15,3 +15,6 @@ criteria must be met:
 * Contributors must be invited and granted **triage** role, rather than **write** role
 (which seems very counter-intuitive); users with **triage** roles can create forks and
 submit pull requests via those, but cannot commit directly to the repository
+* Contributors must enable workflows from forked repositories to be executed, or any branch
+protection criteria which requires successful automated testing will never execute and
+merges will be blocked indefinitely

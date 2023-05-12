@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "Demo npm package publishing exercise",
   "main": "index.js",
+  "engines" : { 
+    "node" : ">=12.0.0"
+  },
   "scripts": {
     "test": "mocha",
     "release": "[ ! -z \"$GITHUB_REF\" ] && (echo $GITHUB_REF | npm version $(grep -oE '(\\d+.\\d+.\\d+)'))"
@@ -17,11 +20,11 @@
     "publishing",
     "security"
   ],
-  "author": "ulisses.albuquerque@latitudefinancial.com",
+  "author": "ulisses.montenegro@gmail.com",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^6.6.0",
     "husky": "^3.1.0",
-    "mocha": "^6.2.2"
+    "mocha": "^10.2.0"
   }
 }
